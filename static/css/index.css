@@ -1,0 +1,303 @@
+@charset "UTF-8";
+.banner-box {
+  overflow: hidden;
+}
+
+.banner-box img {
+  width: 100%;
+}
+
+.banner-box .show-mb {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .banner-box .show-pc {
+    display: none;
+  }
+  .banner-box .show-mb {
+    display: block;
+  }
+}
+
+.banner-box.slick-dotted.slick-slider,
+.banner-box .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.banner-box .slick-dots {
+  bottom: 10px;
+}
+
+.banner-box .slick-dots li button:before {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .banner-box {
+    margin-top: 55px;
+  }
+}
+
+@media (max-width: 400px) {
+  .banner-box {
+    margin-top: 49px;
+  }
+}
+
+/*index*/
+.index_container {
+  background: #f5f5f5;
+  padding: 60px 0 30px;
+  margin-top: -8px;
+}
+
+.index_contentBox_column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.index_contentBox::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*電視劇*/
+.index_tv_list, .index_movie_list {
+  width: 83%;
+}
+
+@media (max-width: 991px) {
+  .index_tv_list, .index_movie_list {
+    width: 100%;
+  }
+}
+
+.link_list {
+  color: #999999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: inline-block;
+}
+
+.link_list li {
+  display: inline-block;
+  color: #999999;
+}
+
+.link_list li::after {
+  content: "/";
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.link_list li:last-child::after {
+  display: none;
+}
+
+.index_more::before {
+  content: url("../images/more_before_line.png");
+  margin: 0 10px 0 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*排行榜*/
+.rank_box {
+  width: 17%;
+}
+
+@media (max-width: 991px) {
+  .rank_box {
+    display: none;
+  }
+}
+
+.rank_mtitle {
+  margin-bottom: 15px;
+}
+
+.rank_content {
+  border: 1px solid #cccccc;
+  background: #fff;
+  min-height: calc(100% - 68px);
+}
+
+.rank_img {
+  height: 130px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.rank_list {
+  margin: 5px 15px 15px;
+}
+
+.rank_unit {
+  display: block;
+  border-bottom: 1px dashed #a3a6ab;
+  padding: 7px 0;
+  font-size: 15px;
+  color: #333333;
+}
+
+.rank_unit:hover {
+  color: #ff443f;
+}
+
+.first_unit {
+  font-size: 17px;
+}
+
+.rank_unit i {
+  display: inline-block;
+  font-style: normal;
+  font-size: 17px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  background: #f4c200;
+  color: #fff;
+  line-height: 25px;
+  margin: 0 10px;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.rank_unit i.first {
+  width: 41px;
+  height: 32px;
+  background: url(../images/index/rank_first.png) no-repeat;
+  border-radius: inherit;
+  line-height: 36px;
+  font-size: 15px;
+  margin-left: 0;
+}
+
+.rank_unit i.second {
+  background: #4faded;
+}
+
+.rank_unit i.third {
+  background: #a8ca04;
+}
+
+.rank_unit span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  width: calc(100% - 52px);
+  vertical-align: middle;
+}
+
+/*綜藝*/
+@media screen and (max-width: 768px) {
+  .index_container {
+    padding: 35px 0;
+  }
+  .link_list {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .index_fixedSlide a {
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+.modal-info {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.indexModal {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  top: 0;
+  z-index: 1100;
+}
+
+.indexModal .modal-dialog {
+  line-height: 1.4;
+}
+
+@media (min-width: 575px) {
+  .indexModal .modal-dialog {
+    width: 400px;
+  }
+}
+
+.indexModal .modal-content {
+  padding: 5%;
+  color: #616161;
+  border-top: 5px solid #ff443f;
+  border-radius: 0;
+  position: relative;
+}
+
+.indexModal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  z-index: 20;
+}
+
+.indexModal h2 {
+  font-size: 2em;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.indexModal p {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.indexModal .check-box {
+  margin-top: 15px;
+}
+
+.indexModal .link-btn {
+  display: inline-block;
+  width: 130px;
+  height: 35px;
+  line-height: 23px;
+  border-radius: 50px;
+  text-align: center;
+  color: #fff;
+  margin: 3px auto;
+}
+
+.indexModal .link-btn.android-btn {
+  background-color: #9fc137;
+}
+
+.indexModal .link-btn.ios-btn {
+  background-color: #1985ee;
+}
